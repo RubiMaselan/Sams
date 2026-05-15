@@ -4,61 +4,27 @@
 
 <div class="dashboard-wrapper">
     <div class="container-fluid  dashboard-content">
-        <!-- ============================================================== -->
-        <!-- pageheader -->
-        <!-- ============================================================== -->
-        <!-- <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="page-header">
-                            <h2 class="pageheader-title">Candidate </h2>
-                            <p class="pageheader-text">Candidate</p>
-                            <div class="page-breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Forms</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Form Validations</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 --><!-- ============================================================== -->
-        <!-- end pageheader -->
-        <!-- ============================================================== -->
+        
+       
         <div class="row">
-            <!-- ============================================================== -->
-            <!-- validation form -->
-            <!-- ============================================================== -->
+            
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="card">
                     <h5 class="card-header">Add Category</h5>
                     <div class="card-body">
                         <form class="form-horizontal row" action="operation/product_group.php" method="post" enctype="multipart/form-data" id="add_brand">
-                            <!--<input type="hidden" required="" placeholder="Product Group Name" class="form-control" value="<//?php echo $_SESSION['id'];?>" name="name" required>-->
+                           //?php echo $_SESSION['id'];?>" name="name" required>-->
                             <div class="col-12 col-md-6">
                                 <label class="col-form-label text-sm-right">Category Name<span class="text-danger">*</span></label>
                               
                                     <input type="text" required="" placeholder="Category Name" class="form-control" value="" name="name" required>
                                 
                             </div>
-                            <!-- <div class="col-12 col-md-6">-->
-                            <!--    <label class="col-form-label text-sm-right">For Product / Service<span class="text-danger">*</span></label>-->
-                               
-                            <!--        <div class="input-group">-->
-                            <!--            <select type="text" class="form-control" placeholder="" name="for" required="" id="">-->
-                            <!--                <option value="1">Product</option>-->
-                            <!--                <option value="2">Service</option>-->
-                            <!--            </select>-->
-                            <!--            <div class="input-group-append">-->
-                            <!--                <span class="input-group-text"><i class="fas fa-caret-down"></i></span>-->
-                            <!--            </div>-->
-                            <!--        </div>-->
-                                
-                            <!--</div>-->
+                            
                             <div class="col-12 col-md-6">
-                                <label class="col-form-label text-sm-right">Status<span class="text-danger">*</span></label>
+                                <label for="status" class="col-form-label text-sm-right">
+    Status <span class="text-danger">*</span>
+</label>
                                
                                     <div class="input-group">
                                         <select type="text" class="form-control" placeholder="" name="status" required="" id="">
@@ -103,7 +69,7 @@
     <!-- ============================================================== -->
     <!-- footer -->
     <!-- ============================================================== -->
-    <?php include('include/footer.php'); ?>
+    <?php include_once('include/footer.php'); ?>
 </div>
 <!-- ============================================================== -->
 <!-- end wrapper  -->
