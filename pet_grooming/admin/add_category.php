@@ -1,6 +1,6 @@
-<?php include('include/head.php'); ?>
-<?php include('include/header.php'); ?>
-<?php include('include/sidebar.php'); ?>
+<?php ('include/head.php'); ?>
+<?php ('include/header.php'); ?>
+<?php ('include/sidebar.php'); ?>
 
 <div class="dashboard-wrapper">
     <div class="container-fluid  dashboard-content">
